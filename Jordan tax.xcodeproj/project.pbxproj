@@ -3,31 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA7BEDF227E9C9030040797E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BEDF127E9C9030040797E /* AppDelegate.swift */; };
-		FA7BEDF427E9C9030040797E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BEDF327E9C9030040797E /* SceneDelegate.swift */; };
-		FA7BEDF627E9C9030040797E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BEDF527E9C9030040797E /* ViewController.swift */; };
-		FA7BEDF927E9C9030040797E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7BEDF727E9C9030040797E /* Main.storyboard */; };
-		FA7BEDFB27E9C9060040797E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7BEDFA27E9C9060040797E /* Assets.xcassets */; };
-		FA7BEDFE27E9C9060040797E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7BEDFC27E9C9060040797E /* LaunchScreen.storyboard */; };
+		FA78F70929C9F512004F9251 /* Jordan_taxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F70829C9F512004F9251 /* Jordan_taxApp.swift */; };
+		FA78F70B29C9F512004F9251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F70A29C9F512004F9251 /* ContentView.swift */; };
+		FA78F70D29C9F514004F9251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78F70C29C9F514004F9251 /* Assets.xcassets */; };
+		FA78F71029C9F514004F9251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78F70F29C9F514004F9251 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA7BEDEE27E9C9030040797E /* TaxCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA7BEDF127E9C9030040797E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA7BEDF327E9C9030040797E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA7BEDF527E9C9030040797E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA7BEDF827E9C9030040797E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA7BEDFA27E9C9060040797E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA7BEDFD27E9C9060040797E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FA7BEDFF27E9C9060040797E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA78F70529C9F512004F9251 /* Jordan tax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jordan tax.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA78F70829C9F512004F9251 /* Jordan_taxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jordan_taxApp.swift; sourceTree = "<group>"; };
+		FA78F70A29C9F512004F9251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA78F70C29C9F514004F9251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA78F70F29C9F514004F9251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA7BEDEB27E9C9030040797E /* Frameworks */ = {
+		FA78F70229C9F512004F9251 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,143 +32,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA7BEDE527E9C9030040797E = {
+		FA78F6FC29C9F512004F9251 = {
 			isa = PBXGroup;
 			children = (
-				FA7BEDF027E9C9030040797E /* TaxCal */,
-				FA7BEDEF27E9C9030040797E /* Products */,
+				FA78F70729C9F512004F9251 /* Jordan tax */,
+				FA78F70629C9F512004F9251 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA7BEDEF27E9C9030040797E /* Products */ = {
+		FA78F70629C9F512004F9251 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA7BEDEE27E9C9030040797E /* TaxCal.app */,
+				FA78F70529C9F512004F9251 /* Jordan tax.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA7BEDF027E9C9030040797E /* TaxCal */ = {
+		FA78F70729C9F512004F9251 /* Jordan tax */ = {
 			isa = PBXGroup;
 			children = (
-				FA7BEDF127E9C9030040797E /* AppDelegate.swift */,
-				FA7BEDF327E9C9030040797E /* SceneDelegate.swift */,
-				FA7BEDF527E9C9030040797E /* ViewController.swift */,
-				FA7BEDF727E9C9030040797E /* Main.storyboard */,
-				FA7BEDFA27E9C9060040797E /* Assets.xcassets */,
-				FA7BEDFC27E9C9060040797E /* LaunchScreen.storyboard */,
-				FA7BEDFF27E9C9060040797E /* Info.plist */,
+				FA78F70829C9F512004F9251 /* Jordan_taxApp.swift */,
+				FA78F70A29C9F512004F9251 /* ContentView.swift */,
+				FA78F70C29C9F514004F9251 /* Assets.xcassets */,
+				FA78F70E29C9F514004F9251 /* Preview Content */,
 			);
-			path = TaxCal;
+			path = "Jordan tax";
+			sourceTree = "<group>";
+		};
+		FA78F70E29C9F514004F9251 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA78F70F29C9F514004F9251 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA7BEDED27E9C9030040797E /* TaxCal */ = {
+		FA78F70429C9F512004F9251 /* Jordan tax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA7BEE0227E9C9060040797E /* Build configuration list for PBXNativeTarget "TaxCal" */;
+			buildConfigurationList = FA78F71329C9F514004F9251 /* Build configuration list for PBXNativeTarget "Jordan tax" */;
 			buildPhases = (
-				FA7BEDEA27E9C9030040797E /* Sources */,
-				FA7BEDEB27E9C9030040797E /* Frameworks */,
-				FA7BEDEC27E9C9030040797E /* Resources */,
+				FA78F70129C9F512004F9251 /* Sources */,
+				FA78F70229C9F512004F9251 /* Frameworks */,
+				FA78F70329C9F512004F9251 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TaxCal;
-			productName = TaxCal;
-			productReference = FA7BEDEE27E9C9030040797E /* TaxCal.app */;
+			name = "Jordan tax";
+			productName = "Jordan tax";
+			productReference = FA78F70529C9F512004F9251 /* Jordan tax.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA7BEDE627E9C9030040797E /* Project object */ = {
+		FA78F6FD29C9F512004F9251 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					FA7BEDED27E9C9030040797E = {
-						CreatedOnToolsVersion = 13.1;
+					FA78F70429C9F512004F9251 = {
+						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = FA7BEDE927E9C9030040797E /* Build configuration list for PBXProject "TaxCal" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = FA78F70029C9F512004F9251 /* Build configuration list for PBXProject "Jordan tax" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FA7BEDE527E9C9030040797E;
-			productRefGroup = FA7BEDEF27E9C9030040797E /* Products */;
+			mainGroup = FA78F6FC29C9F512004F9251;
+			productRefGroup = FA78F70629C9F512004F9251 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA7BEDED27E9C9030040797E /* TaxCal */,
+				FA78F70429C9F512004F9251 /* Jordan tax */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA7BEDEC27E9C9030040797E /* Resources */ = {
+		FA78F70329C9F512004F9251 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7BEDFE27E9C9060040797E /* LaunchScreen.storyboard in Resources */,
-				FA7BEDFB27E9C9060040797E /* Assets.xcassets in Resources */,
-				FA7BEDF927E9C9030040797E /* Main.storyboard in Resources */,
+				FA78F71029C9F514004F9251 /* Preview Assets.xcassets in Resources */,
+				FA78F70D29C9F514004F9251 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA7BEDEA27E9C9030040797E /* Sources */ = {
+		FA78F70129C9F512004F9251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7BEDF627E9C9030040797E /* ViewController.swift in Sources */,
-				FA7BEDF227E9C9030040797E /* AppDelegate.swift in Sources */,
-				FA7BEDF427E9C9030040797E /* SceneDelegate.swift in Sources */,
+				FA78F70B29C9F512004F9251 /* ContentView.swift in Sources */,
+				FA78F70929C9F512004F9251 /* Jordan_taxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		FA7BEDF727E9C9030040797E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA7BEDF827E9C9030040797E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FA7BEDFC27E9C9060040797E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA7BEDFD27E9C9060040797E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		FA7BEE0027E9C9060040797E /* Debug */ = {
+		FA78F71129C9F514004F9251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -217,7 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -227,14 +205,13 @@
 			};
 			name = Debug;
 		};
-		FA7BEE0127E9C9060040797E /* Release */ = {
+		FA78F71229C9F514004F9251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -272,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,19 +259,20 @@
 			};
 			name = Release;
 		};
-		FA7BEE0327E9C9060040797E /* Debug */ = {
+		FA78F71429C9F514004F9251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jordan tax/Preview Content\"";
 				DEVELOPMENT_TEAM = 4MM7V8HKXB;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaxCal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.taxcal.TaxCal;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fwef.wefwefwf.wefew.Jordan-tax";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,19 +288,20 @@
 			};
 			name = Debug;
 		};
-		FA7BEE0427E9C9060040797E /* Release */ = {
+		FA78F71529C9F514004F9251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jordan tax/Preview Content\"";
 				DEVELOPMENT_TEAM = 4MM7V8HKXB;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaxCal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.taxcal.TaxCal;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fwef.wefwefwf.wefew.Jordan-tax";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA7BEDE927E9C9030040797E /* Build configuration list for PBXProject "TaxCal" */ = {
+		FA78F70029C9F512004F9251 /* Build configuration list for PBXProject "Jordan tax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA7BEE0027E9C9060040797E /* Debug */,
-				FA7BEE0127E9C9060040797E /* Release */,
+				FA78F71129C9F514004F9251 /* Debug */,
+				FA78F71229C9F514004F9251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA7BEE0227E9C9060040797E /* Build configuration list for PBXNativeTarget "TaxCal" */ = {
+		FA78F71329C9F514004F9251 /* Build configuration list for PBXNativeTarget "Jordan tax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA7BEE0327E9C9060040797E /* Debug */,
-				FA7BEE0427E9C9060040797E /* Release */,
+				FA78F71429C9F514004F9251 /* Debug */,
+				FA78F71529C9F514004F9251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA7BEDE627E9C9030040797E /* Project object */;
+	rootObject = FA78F6FD29C9F512004F9251 /* Project object */;
 }
