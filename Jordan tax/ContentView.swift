@@ -9,10 +9,13 @@ import SwiftUI
 
 import SwiftUI
 
+import SwiftUI
+
 struct ContentView: View {
     @State private var salaryText: String = ""
     @State private var exemptionsText: String = ""
-    @State private var results: String = ""
+    @State private var results: [String: Double] = [:]
+    @State private var showResultsView: Bool = false
 
     var body: some View {
         NavigationView {
@@ -25,31 +28,29 @@ struct ContentView: View {
                     TextField("Enter exemptions", text: $exemptionsText)
                         .keyboardType(.decimalPad)
                 }
-                Section(header: Text("Results")) {
-                    Text(results)
-                }
                 Button(action: calculateTapped) {
                     Text("Calculate")
                 }
             }
             .navigationBarTitle("Tax Calculator")
+            .sheet(isPresented: $showResultsView) {
+                ResultsView(results: results)
+            }
         }
     }
 
     func calculateTapped() {
         calculate()
+        showResultsView = true
     }
 
     func calculate() {
         var profiles: [CompanyIncomeAndTax] = []
         let salary: Double = (Double(salaryText) ?? 0) / 12
 
-        var str = ""
-        str += "Monthly Salary : \(salary) \n"
         profiles.append(CompanyIncomeAndTax(income: salary * 12)) // Totals
 
         let incomeTotal = profiles.map { $0.income }.reduce(0, +)
-        str += "Total Income : : \(incomeTotal) \n"
 
         let taxEligibaleIncome = incomeTotal - (Double(exemptionsText) ?? 0)
         let reminder = taxEligibaleIncome.truncatingRemainder(dividingBy: 5000.0)
@@ -77,22 +78,54 @@ struct ContentView: View {
             print(fixed)
         }
 
-        str += "Expected Taxes : \(taxes) \n"
-        str += "Expected Monthly Taxes : \(taxes / 12) \n"
-        str += "Total without Taxes : \(incomeTotal - taxes) \n"
-
         let socialSecurity: Double = 0.075
         let monthlySocialSecurity: Double = (incomeTotal / 12) * socialSecurity
 
-        str += "Monthly social security : \(monthlySocialSecurity) \n"
-
         let totalDeductions = monthlySocialSecurity + (taxes / 12)
-        str += "Total Monthly Deductions : \(totalDeductions) \n"
-        str += "Salary after deductions  : \((incomeTotal / 12) - totalDeductions) \n"
 
-        results = str
+        results["Monthly Salary"] = salary
+        results["Total Income"] = incomeTotal
+        results["Expected Taxes"] = taxes
+        results["Expected Monthly Taxes"] = taxes / 12
+        results["Total without Taxes"] = incomeTotal - taxes
+        results["Monthly social security"] = monthlySocialSecurity
+        results["Total Monthly Deductions"] = totalDeductions
+        results["Salary after deductions"] = (incomeTotal / 12) - totalDeductions
     }
 }
+
+struct ResultsView: View {
+    let results: [String: Double]
+
+    var body: some View {
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Summary")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+
+                ForEach(results.keys.sorted(), id: \.self) { key in
+                    HStack {
+                        Text(key)
+                            .font(.headline)
+                            .fontWeight(.medium)
+                        Spacer()
+                        Text("\(results[key]!, specifier: "%.2f")")
+                            .font(.headline)
+                            .fontWeight(.medium)
+                    }
+                }
+                Spacer()
+            }
+            .padding()
+            .navigationBarTitle("Results", displayMode: .inline)
+            .navigationBarItems(trailing: Button("Done") {
+                // Dismiss the view
+            })
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
